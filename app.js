@@ -23,8 +23,7 @@ app.get('/',(req, res) =>{
     app.get('/c:',(req, res) =>{        
         iterator.forEach(data=>{
 
-            const ext = path.extname(data);
-console.log(ext);
+           
             
             if(data.includes(".txt")){
                 res.write('<div style="display:flex; align-items:center;"><img src ="./images/sys.png" width="20px"/><p style="padding-left:5px">'+data+'</p></div>');
